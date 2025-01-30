@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/hyperledger/fabric-sdk-go/pkg/client/ledger"
 	"github.com/hyperledger/fabric-sdk-go/pkg/gateway"
 )
 
@@ -45,6 +44,5 @@ func main() {
 	if err != nil {
 		log.Fatalf("Failed to get loan balance: %v", err)
 	}
-	fmt.Printf("Loan details: %s
-", string(result))
+	fmt.Printf("Loan details: %s ", string(result))
 }
